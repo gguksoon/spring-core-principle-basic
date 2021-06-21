@@ -1,0 +1,22 @@
+plugins {
+	id 'org.springframework.boot' version '2.5.1' // 스프링 부트 2.5.1 버전
+	id 'io.spring.dependency-management' version '1.0.11.RELEASE' // 의존관계 관련 plugin
+	id 'java'
+}
+
+group = 'hello'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11' // java version
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter' // 스프링 부트 라이브러리
+	testImplementation 'org.springframework.boot:spring-boot-starter-test' // 테스트 관련 라이브러리
+}
+
+test {
+	useJUnitPlatform()
+}
